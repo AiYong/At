@@ -1,6 +1,11 @@
 #include "AtDialog.h"
 
-AtDialog::AtDialog()
+AtDialog::AtDialog(QWidget *pParent)
+    :QDialog(pParent)
+{
+}
+
+AtDialog::~AtDialog()
 {
 
 }

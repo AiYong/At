@@ -1,11 +1,17 @@
 #ifndef ATFRAME_H
 #define ATFRAME_H
 
-
-class AtFrame
+#include <QFrame>
+#include "AtGlobal.h"
+class AT_EXPORT AtFrame : public QFrame
 {
+    Q_OBJECT
 public:
-    AtFrame();
+
+    AtFrame(QWidget* pParent = 0);
+
+    virtual ~AtFrame();
+
 };
 
 #endif // ATFRAME_H

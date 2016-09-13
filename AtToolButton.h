@@ -1,11 +1,16 @@
 #ifndef ATTOOLBUTTON_H
 #define ATTOOLBUTTON_H
 
-
-class AtToolButton
+#include <QToolButton>
+#include "AtGlobal.h"
+class AT_EXPORT AtToolButton : public QToolButton
 {
+    Q_OBJECT
 public:
-    AtToolButton();
+
+    explicit AtToolButton(QWidget *pParent = nullptr);
+
+    ~AtToolButton();
 };
 
 #endif // ATTOOLBUTTON_H

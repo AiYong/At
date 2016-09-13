@@ -1,6 +1,12 @@
 #include "AtToolButton.h"
 
-AtToolButton::AtToolButton()
+AtToolButton::AtToolButton(QWidget *pParent)
+    :QToolButton(pParent)
+{
+
+}
+
+AtToolButton::~AtToolButton()
 {
 
 }

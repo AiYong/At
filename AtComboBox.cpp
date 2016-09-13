@@ -1,6 +1,10 @@
 #include "AtComboBox.h"
 
-AtComboBox::AtComboBox()
+AtComboBox::AtComboBox(QWidget *pParent)
+    :QComboBox(pParent)
 {
+}
 
+AtComboBox::~AtComboBox()
+{
 }

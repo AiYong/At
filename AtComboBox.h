@@ -1,11 +1,17 @@
 #ifndef ATCOMBOBOX_H
 #define ATCOMBOBOX_H
 
-
-class AtComboBox
+#include <QComboBox>
+#include "AtGlobal.h"
+class AT_EXPORT AtComboBox : public QComboBox
 {
+    Q_OBJECT
 public:
-    AtComboBox();
+
+    explicit AtComboBox(QWidget *pParent = nullptr);
+
+    virtual ~AtComboBox();
+
 };
 
 #endif // ATCOMBOBOX_H

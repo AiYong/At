@@ -1,6 +1,10 @@
-#include "AWidget.h"
+#include "AtWidget.h"
 
-AWidget::AWidget(QWidget *parent) : QWidget(parent)
+AtWidget::AtWidget(QWidget *pParent)
+    : QWidget(pParent)
 {
+}
 
+AtWidget::~AtWidget()
+{
 }

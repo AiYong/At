@@ -1,6 +1,12 @@
 #include "AtProgressBar.h"
 
-AtProgressBar::AtProgressBar()
+AtProgressBar::AtProgressBar(QWidget *pParent)
+    :QProgressBar(pParent)
+{
+
+}
+
+AtProgressBar::~AtProgressBar()
 {
 
 }

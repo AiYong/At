@@ -1,11 +1,17 @@
 #ifndef ATFOCUSFRAME_H
 #define ATFOCUSFRAME_H
 
-
-class AtFocusFrame
+#include <QFocusFrame>
+#include "AtGlobal.h"
+class AT_EXPORT AtFocusFrame : public QFocusFrame
 {
+    Q_OBJECT
 public:
-    AtFocusFrame();
+
+    explicit AtFocusFrame(QWidget *pParent = nullptr );
+
+    ~AtFocusFrame();
+
 };
 
 #endif // ATFOCUSFRAME_H

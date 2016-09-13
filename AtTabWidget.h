@@ -1,11 +1,16 @@
 #ifndef ATTABWIDGET_H
 #define ATTABWIDGET_H
 
-
-class AtTabWidget
+#include <QTabWidget>
+#include "AtGlobal.h"
+class AT_EXPORT AtTabWidget : public QTabWidget
 {
+    Q_OBJECT
 public:
-    AtTabWidget();
+
+    explicit AtTabWidget(QWidget *pParent = nullptr);
+
+    ~AtTabWidget();
 };
 
 #endif // ATTABWIDGET_H

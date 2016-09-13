@@ -1,6 +1,12 @@
 #include "AtSpinBox.h"
 
-AtSpinBox::AtSpinBox()
+AtSpinBox::AtSpinBox(QWidget *pParent)
+    :QSpinBox(pParent)
+{
+
+}
+
+AtSpinBox::~AtSpinBox()
 {
 
 }

@@ -1,6 +1,12 @@
-#include "attabbar.h"
+#include "AtTabBar.h"
 
-AtTabBar::AtTabBar()
+AtTabBar::AtTabBar(QWidget *pParent)
+    :QTabBar(pParent)
+{
+
+}
+
+AtTabBar::~AtTabBar()
 {
 
 }

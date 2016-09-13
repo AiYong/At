@@ -1,11 +1,17 @@
 #ifndef ATFONTCOMBOBOX_H
 #define ATFONTCOMBOBOX_H
 
-
-class AtFontComboBox
+#include <QFontComboBox>
+#include "AtGlobal.h"
+class AT_EXPORT AtFontComboBox : public QFontComboBox
 {
+    Q_OBJECT
 public:
-    AtFontComboBox();
+
+    explicit AtFontComboBox(QWidget *pParent = nullptr );
+
+    ~AtFontComboBox();
+
 };
 
 #endif // ATFONTCOMBOBOX_H

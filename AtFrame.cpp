@@ -1,6 +1,11 @@
 #include "AtFrame.h"
 
-AtFrame::AtFrame()
+AtFrame::AtFrame(QWidget* pParent)
+    :QFrame(pParent)
 {
-
 }
+
+AtFrame::~AtFrame()
+{
+}
+

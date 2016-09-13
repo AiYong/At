@@ -1,17 +1,19 @@
-#ifndef AWIDGET_H
-#define AWIDGET_H
+#ifndef ATWIDGET_H
+#define ATWIDGET_H
 
 #include <QWidget>
 
-class AWidget : public QWidget
+#include "AtGlobal.h"
+
+class AT_EXPORT AtWidget : public QWidget
 {
     Q_OBJECT
 public:
-    explicit AWidget(QWidget *parent = 0);
 
-signals:
+    explicit AtWidget(QWidget *pParent = 0);
 
-public slots:
+    virtual ~AtWidget();
+
 };
 
-#endif // AWIDGET_H
+#endif // ATWIDGET_H

@@ -1,11 +1,19 @@
 #ifndef ATDATEEDIT_H
 #define ATDATEEDIT_H
 
-
-class AtDateEdit
+#include <QDateEdit>
+#include "AtGlobal.h"
+class AT_EXPORT AtDateEdit : public QDateEdit
 {
+    Q_OBJECT
 public:
-    AtDateEdit();
+
+    explicit AtDateEdit(QWidget *pParent = nullptr);
+
+    explicit AtDateEdit(const QDate &rDate, QWidget *pParent = nullptr);
+
+    ~AtDateEdit();
+
 };
 
 #endif // ATDATEEDIT_H

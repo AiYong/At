@@ -1,6 +1,12 @@
 #include "AtTabWidget.h"
 
-AtTabWidget::AtTabWidget()
+AtTabWidget::AtTabWidget(QWidget *pParent)
+    :QTabWidget(pParent)
+{
+
+}
+
+AtTabWidget::~AtTabWidget()
 {
 
 }

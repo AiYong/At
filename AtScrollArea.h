@@ -1,11 +1,17 @@
 #ifndef ATSCROLLAREA_H
 #define ATSCROLLAREA_H
 
-
-class AtScrollArea
+#include <QScrollArea>
+#include "AtGlobal.h"
+class AT_EXPORT AtScrollArea : public QScrollArea
 {
+    Q_OBJECT
 public:
-    AtScrollArea();
+
+    AtScrollArea(QWidget *pParent = nullptr);
+
+    ~AtScrollArea();
+
 };
 
 #endif // ATSCROLLAREA_H

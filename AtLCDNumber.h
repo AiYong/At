@@ -1,11 +1,19 @@
 #ifndef ATLCDNUMBER_H
 #define ATLCDNUMBER_H
 
-
-class AtLCDNumber
+#include <QLCDNumber>
+#include "AtGlobal.h"
+class AT_EXPORT AtLCDNumber : public QLCDNumber
 {
+    Q_OBJECT
 public:
-    AtLCDNumber();
+
+    explicit AtLCDNumber(QWidget* pParent = nullptr);
+
+    explicit AtLCDNumber(uint nNumDigits, QWidget* pParent = nullptr);
+
+    ~AtLCDNumber();
+
 };
 
 #endif // ATLCDNUMBER_H

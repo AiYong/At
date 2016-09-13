@@ -1,11 +1,16 @@
 #ifndef ATDOUBLESPINBOX_H
 #define ATDOUBLESPINBOX_H
 
-
-class AtDoubleSpinBox
+#include <QDoubleSpinBox>
+#include "AtGlobal.h"
+class AT_EXPORT AtDoubleSpinBox : public QDoubleSpinBox
 {
+    Q_OBJECT
 public:
-    AtDoubleSpinBox();
+
+    explicit AtDoubleSpinBox(QWidget *pParent = nullptr);
+
+    ~AtDoubleSpinBox();
 };
 
 #endif // ATDOUBLESPINBOX_H

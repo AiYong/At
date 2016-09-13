@@ -1,6 +1,12 @@
 #include "AtFontComboBox.h"
 
-AtFontComboBox::AtFontComboBox()
+AtFontComboBox::AtFontComboBox(QWidget *pParent)
+    :QFontComboBox(pParent)
+{
+
+}
+
+AtFontComboBox::~AtFontComboBox()
 {
 
 }

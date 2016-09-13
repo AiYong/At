@@ -1,11 +1,17 @@
 #ifndef ATDIALOG_H
 #define ATDIALOG_H
 
-
-class AtDialog
+#include <QDialog>
+#include "AtGlobal.h"
+class AT_EXPORT AtDialog : public QDialog
 {
+    Q_OBJECT
 public:
-    AtDialog();
+
+    explicit AtDialog(QWidget *pParent = 0);
+
+    virtual ~AtDialog();
+
 };
 
 #endif // ATDIALOG_H

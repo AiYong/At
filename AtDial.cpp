@@ -1,6 +1,12 @@
 #include "AtDial.h"
 
-AtDial::AtDial()
+AtDial::AtDial(QWidget *pParent)
+    :QDial(pParent)
+{
+
+}
+
+AtDial::~AtDial()
 {
 
 }

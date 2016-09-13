@@ -1,11 +1,19 @@
 #ifndef ATAPPLICATION_H
 #define ATAPPLICATION_H
 
+#include <QApplication>
 
-class AtApplication
+#include "AtGlobal.h"
+
+class AT_EXPORT AtApplication : public QApplication
 {
+    Q_OBJECT
 public:
-    AtApplication();
+
+    explicit AtApplication(int &argc, char **argv, int = ApplicationFlags);
+
+    virtual ~AtApplication();
+
 };
 
 #endif // ATAPPLICATION_H

@@ -1,11 +1,17 @@
 #ifndef ATPROGRESSBAR_H
 #define ATPROGRESSBAR_H
 
-
-class AtProgressBar
+#include <QProgressBar>
+#include "AtGlobal.h"
+class AT_EXPORT AtProgressBar : public QProgressBar
 {
+    Q_OBJECT
 public:
-    AtProgressBar();
+
+    explicit AtProgressBar(QWidget *pParent = nullptr);
+
+    ~AtProgressBar();
+
 };
 
 #endif // ATPROGRESSBAR_H
